@@ -1213,7 +1213,7 @@ dependencies = [
  "smallvec",
  "thiserror",
  "url",
- "webpki-roots 0.24.0",
+ "webpki-roots 1.0.2",
 ]
 
 [[package]]
@@ -2710,6 +2710,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "rustls-pki-types"
+version = "1.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "229a4a4c221013e7e1f1a043678c5cc39fe5171437c88fb47151a21e6f5b5c79"
+
+[[package]]
 name = "rustls-webpki"
 version = "0.100.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3425,11 +3431,11 @@ dependencies = [
 
 [[package]]
 name = "webpki-roots"
-version = "0.24.0"
+version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b291546d5d9d1eab74f069c77749f2cb8504a12caa20f0f2de93ddbf6f411888"
+checksum = "7e8983c3ab33d6fb807cfcdad2491c4ea8cbc8ed839181c7dfd9c67c83e261b2"
 dependencies = [
- "rustls-webpki 0.101.1",
+ "rustls-pki-types",
 ]
 
 [[package]]
